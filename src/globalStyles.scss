@@ -1,0 +1,20 @@
+.button {
+  color: #fff;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  &_success {
+    background-color: #00a94e;
+  }
+  &_reset {
+    background-color: #e13649;
+  }
+  &_primary {
+    background-color: #2980d2;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}

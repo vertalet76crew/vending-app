@@ -1,0 +1,16 @@
+export const RUB = "RUB";
+export const USD = "USD";
+export const EUR = "EUR";
+export const SUM = "SUM";
+export const ADD_SUM = "ADD_SUM";
+export const RESET = "RESET";
+export const ADD_GOOD = "ADD_GOOD";
+export const GET_GOODS = "GET_GOODS";
+export const UPDATE_GOODS = "UPDATE_GOODS";
+export const ACTIVE_GOODS_ITEM = "ACTIVE_GOODS_ITEM";
+export const SUM_ERROR = "SUM_ERROR";
+export const SUM_VALUE_ERROR = "SUM_VALUE_ERROR";
+export const RESET_ERROR = "RESET_ERROR";
+export const RESET_ACTIVE_GOODS_ITEM = "RESET_ACTIVE_GOODS_ITEM";
+export const SET_MIN_SUM = "SET_MIN_SUM";
+export const RESET_MIN_SUM = "RESET_MIN_SUM";

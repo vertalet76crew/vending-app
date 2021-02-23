@@ -1,0 +1,36 @@
+.controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+
+  &__title {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+  }
+  &__wrap {
+    display: flex;
+  }
+  &__backet {
+    background-color: #6c757c;
+    margin-right: 5px;
+    color: #fff;
+    min-width: 46px;
+    border-radius: 3px;
+    padding: 0 5px 0 20px;
+    box-sizing: border-box;
+    background-image: url("../../img/backet.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
