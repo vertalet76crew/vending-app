@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import "./style.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { RUB, USD, EUR } from "../../types";
 import { actionMoneyType, sumMoney } from "../../actions/actions";
 
 const Money = () => {
-  const selector = useSelector((state) => state);
+  const sumValue = useSelector((state) => state.sum.sumValue);
+  const name = useSelector((state) => state.moneyType.name);
   const dispatch = useDispatch();
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -25,7 +26,7 @@ const Money = () => {
           className="money__selected"
           onClick={() => setDropdownOpen(!dropdownOpen)}
         >
-          {selector.moneyType.name}
+          {name}
         </span>
         <div className="money__dropdown ">
           {moneyList.map((el, i) => {
@@ -47,7 +48,7 @@ const Money = () => {
           placeholder="Сумма"
           type="number"
           className="money__input"
-          value={selector.sum.sumValue}
+          value={sumValue}
           onChange={(e) => dispatch(onChange(e.target.value))}
         />
       </div>

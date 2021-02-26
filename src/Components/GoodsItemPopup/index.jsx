@@ -32,7 +32,7 @@ const GoodsItemPopup = () => {
     <div className="goods-item">
       <div className="goods-item__popup">
         <div className="goods-item__container">
-          <img src={img} alt="" />
+          <img src={img} alt="" className="goods-item__img" />
           <p className="goods-item__text">Выбрать данный товар</p>
           <p className="goods-item__text">{name}</p>
           <p className="goods-item__text">

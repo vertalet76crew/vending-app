@@ -7,7 +7,7 @@ const ErrorPopup = () => {
   const dispatch = useDispatch();
   const errors = useSelector((state) => state.errors);
 
-  const text = () => {
+  const getText = () => {
     if (!!errors.sumError) {
       return "Выберите валюту";
     } else if (!!errors.sumValueError) {
@@ -18,11 +18,11 @@ const ErrorPopup = () => {
 
   return (
     <div className="error">
-      {!!text() && (
+      {!!getText() && (
         <div className="error__popup">
           <div className="error__container">
             <div className="error__logo"></div>
-            <p className="error__text">{text()}</p>
+            <p className="error__text">{getText()}</p>
 
             <button
               className="error__button button button_primary"

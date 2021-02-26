@@ -7,7 +7,6 @@ import { actionAdd, actionReset } from "../../actions/actions";
 const Controls = () => {
   const selector = useSelector((state) => state.backet);
   const dispatch = useDispatch();
-
   return (
     <div className="controls">
       <span className="controls__title">Вендинговый автомат</span>

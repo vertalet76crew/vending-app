@@ -1,3 +1,6 @@
+Приложение имитирует вендинговый аппарат , необходимов выбрать валюту , ввести сумму и нажать кнопку добавить,
+если не выбрана валюта или не выбрана сумма или сумма меньше минимальной цены то при выборе товара появится окно с ошибкой
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
